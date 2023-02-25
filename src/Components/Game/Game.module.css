@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto+Mono:wght@700&family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: black;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(89, 44, 255);
+  overflow: hidden;
+}
+
+.main {
+  padding: 25px;
+  width: 550px;
+  height: 400px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.progressBarColor {
+  margin-right: auto;
+  height: 10px;
+  max-width: 500px;
+  background: linear-gradient(90deg, rgb(7, 135, 255), rgb(65, 243, 48));
+  border-radius: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.progressBarGrey {
+  background-color: rgb(255, 255, 255);
+  height: 10px;
+  width: 500px;
+  position: relative;
+  top: -10px;
+  outline: 2px solid rgb(138, 138, 138);
+  border-radius: 10px;
+}
+
+.question {
+  margin-top: 45px;
+  font-family: "Arimo", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.answerList {
+  margin-top: 22px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.answer {
+  cursor: pointer;
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 500px;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid rgb(177, 177, 177);
+  transition-duration: 0.5s;
+}
+
+.answer:hover {
+  border: 2px solid rgb(92, 92, 92);
+}
